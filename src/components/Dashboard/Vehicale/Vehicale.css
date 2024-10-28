@@ -1,0 +1,56 @@
+/* Header styles */
+.vehicle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .vehicle-header h4 {
+    margin: 0;
+  }
+  
+  /* Search input styles */
+  .vehicle-search {
+    width: 100%;
+    max-width: 250px; /* Limits search bar width */
+  }
+  
+  /* Table styles */
+  .vehicle-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .vehicle-table th,
+  .vehicle-table td {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* Table header styles */
+  .vehicle-table th {
+    background-color: #37505C;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Table row hover effect */
+  .vehicle-table tbody tr:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
+  }
+  
+  /* Image styles */
+  .vehicle-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px; /* Optional: adds rounded corners to images */
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+   
+  

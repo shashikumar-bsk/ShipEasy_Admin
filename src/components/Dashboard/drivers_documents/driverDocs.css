@@ -1,0 +1,46 @@
+Full-width table container
+.driver-table-container {
+    width: 100%;
+  }
+  
+  /* Ensure table fits its content */
+  .driver-table-container table {
+    width: 100%;
+    min-width: 1200px; /* Adjust min-width as needed */
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+  
+  /* Make sure table container allows horizontal scrolling */
+  .driver-table-container .table-scroll-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-left: 0; /* Align table to start from the left */
+  }
+  
+  /* Adjustments for mobile view */
+  @media (max-width: 768px) {
+    .driver-table-container table {
+      font-size: 0.75rem; /* Adjust font size for better readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .driver-table-container table {
+      font-size: 0.7rem; /* Smaller font size for very small screens */
+    }
+  }
+  
+  /* Pagination container for mobile responsiveness */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .pagination-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

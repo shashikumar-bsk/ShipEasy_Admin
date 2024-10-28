@@ -1,0 +1,61 @@
+/* Base styles for the TableHistory component */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  }
+  
+  .table {
+    min-width: 600px; /* Ensures the table does not shrink too much */
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-field {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 0 10px; /* Add padding for better spacing */
+    }
+  
+    .table {
+      min-width: 100%; /* Allow the table to fill the container */
+    }
+  
+    .pagination-container {
+      margin-top: 10px;
+    }
+  
+    .search-field {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Media Queries for Extra Small Devices (phones) */
+  @media (max-width: 480px) {
+    .table-container {
+      padding: 0 5px; /* Add padding for better spacing */
+    }
+  
+    .table {
+      min-width: 100%; /* Allow the table to fill the container */
+    }
+  
+    .pagination-container {
+      margin-top: 4px;
+    }
+  
+    .search-field {
+      width: 370px;
+      max-width: 400px;
+    }
+  }
+  

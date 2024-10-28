@@ -1,0 +1,186 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  border-color: #686d76; 
+  padding-left: 50px;
+}
+
+.login-form {
+  padding: 40px;
+  border-radius: 8px;
+  border-color: #686d76;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  border-color: #686d76;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #686d76; /* Updated color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #5a6068; /* Slightly darker shade for hover effect */
+}
+
+.forgot-password,
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.forgot-password:hover,
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-top: 5px; 
+}
+
+/* Image Container Styling */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px; /* Space between image and form */
+  
+}
+
+.image-container img {
+  width: 70%; /* Make image take full width of its container */
+  height: 70%; 
+  object-fit: cover; 
+  border-radius: 5px; 
+  
+}
+
+/* Extra large devices (≥ 1200px) */
+@media (min-width:1200px) {
+  .login-container {
+    justify-content: center;
+  }
+  .login-form {
+    height: 40%;
+    width: 70%;
+  }
+  .image-container img {
+    height: 40%;
+    width: 70%;
+  }
+}
+
+/* Large devices (≥ 992px and < 1200px) */
+@media (min-width:992px) {
+  .login-container {
+    justify-content: center;
+  }
+  .login-form {
+    height: 40%;
+    width: 70%;
+  }
+  .image-container img {
+    height: 40%;
+    width: 70%;
+  }
+}
+
+/* Medium devices (≥ 768px and < 992px) */
+@media (min-width:768px) {
+  .login-container {
+    justify-content: center;
+  }
+  .login-form {
+    height: 400px;
+    width: 350px;
+  }
+  .image-container {
+    width: 80%; /* Make image container full width */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .image-container img {
+    width: 80%; /* Make image full width */
+    height: 80%; /* Maintain aspect ratio */
+  }
+}
+
+/* Small devices (≥ 576px and < 768px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .login-container {
+    flex-direction: column; /* Stack image and form vertically */
+    padding-left: 0; /* Remove left padding */
+  }
+  .image-container {
+    width: 70%; /* Make image container full width */
+    padding-left: 0; /* Remove left padding */
+  }
+  .image-container img {
+    width: 70%; /* Make image full width */
+    height: 80%; /* Maintain aspect ratio */
+  }
+  .login-form {
+    width: 100%; /* Form takes full width */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 20px; /* Space above the form */
+  }
+}
+
+/* Extra small devices (< 576px) */
+@media (max-width: 575.98px) {
+  .login-container {
+    flex-direction: column; /* Stack image and form vertically */
+    padding-left: 0; /* Remove left padding */
+    width:100%;
+  }
+  .image-container {
+    width: 70%; /* Make image container full width */
+    padding-left: 0; /* Remove left padding */
+  }
+  .image-container img {
+    width: 60%; /* Make image full width */
+    height: 60%; /* Maintain aspect ratio */
+  }
+  .login-form {
+    width: 60%; /* Form takes full width */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 10px; /* Space above the form */
+    height:auto;
+  }
+}

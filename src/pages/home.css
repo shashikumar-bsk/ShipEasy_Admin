@@ -1,0 +1,35 @@
+.paddingall{
+    padding: 10px,10px,10px,10px;
+}
+.count-title{
+    font-weight: 600;
+}
+.count-subtitle{
+    font-size: 14px;
+}
+.gradient-light {
+  background: rgb(40,34,70);
+  background: linear-gradient(158deg, rgba(40,34,70,1) 0%, rgba(30,47,141,1) 100%);
+}
+
+  .gradient {
+    background: rgb(53,138,148);
+    background: linear-gradient(158deg, rgba(53,138,148,1) 0%,rgba(91,180,96,1)100%);
+    /* background-color:linear-gradient(158deg, rgba(53,138,148,1) 0%,rgba(91,180,96,1)100%) ; */
+  }
+
+ 
+
+
+  .iconic-style{
+    margin-top: 10px;
+    margin-left: 5px;
+    color: aliceblue;
+  }
+  .bg-color{
+    min-height:100vh;
+    background: #ECEFF1;
+    /* background: red; */
+
+    background: linear-gradient(158deg, rgb(224,224,224) 0%, rrgb(233,237,254)100%);
+  }

@@ -1,0 +1,77 @@
+/* Admin New Password Page Styles */
+
+.admin-new-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.admin-new-password-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.admin-new-password-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.admin-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.admin-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+.admin-input:focus,
+.admin-input:hover {
+  border-color: #007bff;
+  outline: none;
+}
+
+.admin-save-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #686d76; /* Set background color to #686d76 */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-save-button:hover {
+  background-color: #50555c; /* Optional: Darker shade for hover effect */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

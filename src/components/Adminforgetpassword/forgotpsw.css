@@ -1,0 +1,258 @@
+/* Base styles */
+.admin-forgot-password-container {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10vh;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+}
+
+.admin-forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-forgot-password-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.admin-forgot-password-description {
+  margin-bottom: 20px;
+}
+
+.admin-form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjusted to margin-bottom for better spacing */
+}
+
+.admin-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%; /* Ensure the input field fits within its container */
+  box-sizing: border-box; /* Prevents padding from increasing the overall width */
+}
+
+.admin-login-button {
+  padding: 10px 15px;
+  background-color: #686d76; /* Change the background color to #686d76 */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 35px;
+}
+
+.admin-login-button:hover {
+  background-color: #50555c; /* Optional: Adjust the hover color to be a shade darker */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 599px) {
+  .admin-forgot-password-container {
+    width: 80%; /* Full width with some padding */
+    height: 700px; /* Allow height to adjust based on content */
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin-top: 5vh; /* Adjusted margin for better spacing on smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    box-shadow: none;
+    border-width: 0px;
+  }
+
+  .admin-forgot-password-heading {
+    font-size: 30px; /* Slightly smaller font size */
+    margin-bottom: 10px;
+  }
+ 
+  .admin-forgot-password-description {
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+    font-size: 22px;
+  }
+
+  .admin-form-group {
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .admin-input {
+    font-size: 25px; /* Slightly smaller font size for inputs */
+  }
+
+  .admin-login-button {
+    padding: 8px 12px; /* Reduced padding for smaller screens */
+    font-size: 25px;
+    height: auto; /* Adjust button height based on content */
+    border-radius: 10px;
+  }
+
+  .error-message {
+    font-size: 0.8rem; /* Smaller font size for error messages */
+  }
+}
+
+/* Small devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .admin-forgot-password-container {
+    width: 80%; /* Wider than extra small devices */
+    height: 700px; /* Allow height to adjust based on content */
+    padding: 15px; /* Reduced padding for smaller tablets */
+  
+  }
+
+  .admin-forgot-password-heading {
+    font-size: 25px; /* Slightly smaller font size for tablets */
+  }
+
+  .admin-forgot-password-description {
+    margin-bottom: 18px; /* Reduced margin for tablets */
+  }
+
+  .admin-form-group {
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+    font-size: 20px; /* Adjusted margin for tablets */
+  }
+
+  .admin-input {
+    font-size: 0.9rem; /* Slightly smaller font size for inputs */
+  }
+
+  .admin-login-button {
+    padding: 9px 13px; /* Reduced padding for tablets */
+    font-size: 0.9rem; /* Slightly smaller font size for button */
+  }
+
+  .error-message {
+    font-size: 0.85rem; /* Smaller font size for error messages */
+  }
+}
+
+/* Medium devices (desktops, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .admin-forgot-password-container {
+    width: 70%; /* Adjusted width for medium devices */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Standard padding for medium devices */
+  }
+
+  .admin-forgot-password-heading {
+    font-size: 1.5rem; /* Standard font size */
+  }
+
+  .admin-forgot-password-description {
+    margin-bottom: 20px; /* Standard margin */
+  }
+
+  .admin-form-group {
+    margin-bottom: 15px; /* Standard margin */
+  }
+
+  .admin-input {
+    font-size: 1rem; /* Standard font size for inputs */
+  }
+
+  .admin-login-button {
+    padding: 10px 15px; /* Standard padding for button */
+    font-size: 1rem; /* Standard font size for button */
+  }
+
+  .error-message {
+    font-size: 0.9rem; /* Standard font size for error messages */
+  }
+}
+
+/* Large devices (large desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .admin-forgot-password-container {
+    width: 50%; /* Wider width for large devices */
+    height: 50%; /* Allow height to adjust based on content */
+    padding: 25px; /* Standard padding for large devices */
+    
+  }
+
+  .admin-forgot-password-heading {
+    font-size: 1.6rem; /* Larger font size for large devices */
+  }
+
+  .admin-forgot-password-description {
+    margin-bottom: 22px; /* Increased margin for large devices */
+  }
+
+  .admin-form-group {
+    margin-bottom: 18px; /* Increased margin for large devices */
+  }
+
+  .admin-input {
+    font-size: 1.05rem; /* Slightly larger font size for inputs */
+  }
+
+  .admin-login-button {
+    padding: 12px 18px; /* Larger padding for button */
+    font-size: 1.05rem; /* Slightly larger font size for button */
+    padding:5px;
+
+  }
+
+  .error-message {
+    font-size: 0.95rem; /* Larger font size for error messages */
+  }
+}
+
+/* Extra large devices (extra large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .admin-forgot-password-container {
+    width: 40%; /* Standard width for extra large devices */
+    height: 50%; /* Allow height to adjust based on content */
+    padding: 30px; /* Larger padding for extra large devices */
+
+  }
+
+  .admin-forgot-password-heading {
+    font-size: 1.7rem; /* Larger font size for extra large devices */
+  }
+
+  .admin-forgot-password-description {
+    margin-bottom: 25px; /* Increased margin for extra large devices */
+  }
+
+  .admin-form-group {
+    margin-bottom: 20px; /* Increased margin for extra large devices */
+  }
+
+  .admin-input {
+    font-size: 1.1rem; /* Larger font size for inputs */
+  }
+
+  .admin-login-button {
+    padding: 15px 20px; /* Larger padding for button */
+    font-size: 1.1rem; /* Larger font size for button */
+    padding:5px;
+  }
+
+  .error-message {
+    font-size: 1rem; /* Larger font size for error messages */
+  }
+}
